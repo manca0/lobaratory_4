@@ -12,6 +12,11 @@ int main(){
 	int *arr2 = (int*)malloc(N2 * sizeof(int));
 	int *arr3 = (int*)malloc(N3 * sizeof(int));
 	int *arr4 = (int*)malloc(N4 * sizeof(int));
+    
+    if(!arr1) return ENOMEM;
+    if(!arr2) return ENOMEM;
+    if(!arr3) return ENOMEM;
+    if(!arr4) return ENOMEM;
 
 	fill_array(arr1, N1);
 	fill_array(arr2, N2);
